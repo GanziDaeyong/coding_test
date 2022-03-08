@@ -1,12 +1,12 @@
-# Ignore Every Dir
-./*/*
+#Ignore Every Dir
+#./*/*
 
 #
-!./*/*.cpp
-!./*/*.py
-!./*/*.java
-!./*/*.ipynb
-!./*/*.js
-!./*/*.c
-!.gitignore
-!README.md
+./*/*.cpp
+#!./*/*.py
+#!./*/*.java
+#!./*/*.ipynb
+#!./*/*.js
+#!./*/*.c
+#!.gitignore
+#!README.md
