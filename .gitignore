@@ -1,7 +1,7 @@
-# Ignore Everything
-./*
+# Ignore Every Dir
+./*/*
 
-# But not .cpp
+#
 !./*/*.cpp
 !./*/*.py
 !./*/*.java
