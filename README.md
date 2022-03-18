@@ -4,11 +4,10 @@
 
 ******************
 
-#### 기억할 것
+### 기억할 것
 
-Some text
-
-- <map에서 특정 원소 삭제(kv pair)> map.erase(key)
+- <map에서 특정 원소 삭제(kv pair)> 
+- - map.erase(key)
 
 - <malloc> (int*) malloc(sizeof(T)*length)
 - Instruction 2
