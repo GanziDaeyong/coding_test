@@ -16,6 +16,7 @@ cpp가 디폴트, 일부 string 다루는 문제들에서만 python
 - 우선순위 큐 정렬: 구조체 선언 + operator 오버라이딩 후 pq<T, vector<T>, 구조체> 식으로 선언. Template 참고
 - map에서 key 유무 판단은 count, 해당 원소에 접근해야 하면 find 혹은 m[key]로 직접 접근
 - deque: dq.push_front()/back(), dq.pop_ / dq.assign(vec.begin(),vec.end())
+- string도 sort 가능.
 
 
 ******************
