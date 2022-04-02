@@ -28,6 +28,7 @@ cpp가 디폴트, 일부 string 다루는 문제들에서만 python
 - 파이썬 string 자를때 index inclusive / exclusive
 - re 문법 익히기
 - 후위연산자(stack활용) 다시 풀어보기
+- next_permutation 순열 조합 사용법 익히기
   
 ******************
 
