@@ -18,18 +18,19 @@ cpp가 디폴트, 일부 string 다루는 문제들에서만 python
 - deque: dq.push_front()/back(), dq.pop_ / dq.assign(vec.begin(),vec.end())
 - string도 바로 sort 가능하다. sort(str.begin, str.end, greater<int>());
 - 트리의 지름 문제는 보통 dfs 두번 돌리는 식.
+- 우선순위 큐 정렬 순서 오버라이딩 시 일반 정렬과 반대로 작동한다.
+- python 범위는 [)   inclusive - exclusive
 
 ******************
   
 ### 알아볼 것
-  
-- 우선순위 큐 정렬 순서 오버라이딩 시 일반 정렬과 반대로 작동하는듯?
+
+- bubble sort 다시. 갑자기 기억안남;
 - 프로그래머스 3_그래프_가장먼노드 BFS외 풀이 있나 확인
-- 파이썬 string 자를때 index inclusive / exclusive
 - re 문법 익히기
 - 후위연산자(stack활용) 다시 풀어보기
 - next_permutation 순열 조합 사용법 익히기
-  
+
 ******************
 
 ### 템플릿 추가할 것
@@ -43,7 +44,7 @@ cpp가 디폴트, 일부 string 다루는 문제들에서만 python
 - 문자열
 - 위상정렬
 - ~~유니온파인드~~
-- LCS
+- ~~LCS~~
 - 플로이드 와샬
 
 ******************
@@ -60,6 +61,7 @@ cpp가 디폴트, 일부 string 다루는 문제들에서만 python
 - 프로그래머스 - 그리디 - 조이스틱 <- 이거 억울함,, 브루트포슨데;;
 - 프로그래머스 - DP - N으로 표현
 - 프로그래머스 - 그래프 - 순위
+
 ******************
 
 ### 풀던중..
