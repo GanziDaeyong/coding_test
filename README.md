@@ -6,20 +6,35 @@ cpp가 디폴트, 일부 string 다루는 문제들에서만 python
 
 ### 기억할 것
 
+#### 문법
+
+- python 범위는 [)   inclusive - exclusive
 - map.erase(key) 
 - (int*) malloc(sizeof(T)*length)
 - vecB.assign(vecA.begin(), vecA.end()) | vector deep copy 하는법
 - copy(map.begin(), map.end(), vec.begin()) | map을 vector로. 자료형 동일해야 함 (m<s,i>면 vec<pair<s, i>>)
 - 위 copy할 때 vector을 미리 map크기로 resize 안해주면 segmentation에러 발생
-- priority_queue, queue는 순회 안됨
 - sort(v.begin(), v.end(), greater<int>()); / less<int>()
-- 우선순위 큐 정렬: 구조체 선언 + operator 오버라이딩 후 pq<T, vector<T>, 구조체> 식으로 선언. Template 참고
-- map에서 key 유무 판단은 count, 해당 원소에 접근해야 하면 find 혹은 m[key]로 직접 접근
-- deque: dq.push_front()/back(), dq.pop_ / dq.assign(vec.begin(),vec.end())
-- string도 바로 sort 가능하다. sort(str.begin, str.end, greater<int>());
-- 트리의 지름 문제는 보통 dfs 두번 돌리는 식.
+- 삼항연산자 python: a=b if a==b else c // cpp: a = a==b? a : b
+
+
+#### 자료구조
+
+- python에는 multiset 따로 없음. 할꺼면 리스트로 돌려야함
 - 우선순위 큐 정렬 순서 오버라이딩 시 일반 정렬과 반대로 작동한다.
-- python 범위는 [)   inclusive - exclusive
+- priority_queue, queue는 순회 안됨
+- 우선순위 큐 정렬: 구조체 선언 + operator 오버라이딩 후 pq<T, vector<T>, 구조체> 식으로 선언. Template 참고
+- deque: dq.push_front()/back(), dq.pop_ / dq.assign(vec.begin(),vec.end())
+- map에서 key 유무 판단은 count, 해당 원소에 접근해야 하면 find 혹은 m[key]로 직접 접근
+
+#### 문자열
+
+- string도 바로 sort 가능하다. sort(str.begin, str.end, greater<int>());
+- python: str.lower() str.upper() // cpp: transform(str.begin(), str.end(), str.begin, ::lower)
+
+#### 그외
+
+- 트리의 지름 문제는 보통 dfs 두번 돌리는 식.
 
 ******************
   
@@ -67,3 +82,11 @@ cpp가 디폴트, 일부 string 다루는 문제들에서만 python
 ### 풀던중..
 
 백준 14567
+프로그래머스 카카오2018 뉴스 클러스터링
+
+******************
+
+### 푼 문제
+
+백준 : 109
+프로그래머스 : 37
