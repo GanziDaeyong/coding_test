@@ -1,6 +1,7 @@
 ## 백준/프로그래머스 문제풀이
 cpp가 디폴트, 일부 string 다루는 문제들에서만 python  
-1일 1커밋하기
+1일 1커밋하기  
+잘푸는거 말고, 못푸는걸 풀기
 
 ******************
 
@@ -16,6 +17,8 @@ cpp가 디폴트, 일부 string 다루는 문제들에서만 python
 - 위 copy할 때 vector을 미리 map크기로 resize 안해주면 segmentation에러 발생
 - sort(v.begin(), v.end(), greater<int>()); / less<int>()
 - 삼항연산자 python: a=b if a==b else c // cpp: a = a==b? a : b
+- rotate(s.begin(), s.begin()+1, s.end()) -> 왼쪽 // rotate(s.rbegin(), s.rbegin()+1, s.end()) -> 오른쪽
+- python은 set에 add // cpp는 set에 insert
 
 
 #### 자료구조
@@ -26,11 +29,16 @@ cpp가 디폴트, 일부 string 다루는 문제들에서만 python
 - 우선순위 큐 정렬: 구조체 선언 + operator 오버라이딩 후 pq<T, vector<T>, 구조체> 식으로 선언. Template 참고
 - deque: dq.push_front()/back(), dq.pop_ / dq.assign(vec.begin(),vec.end())
 - map에서 key 유무 판단은 count, 해당 원소에 접근해야 하면 find 혹은 m[key]로 직접 접근
+- cpp의 set은 iterate 불가하다.
+- map은 pair로 순회할 수 있다. ex) (pii p : map) 처럼 해도 되고, iterator 접근은 it->first it->second도 인식함.
+- map은 꼭 count로 확인하고 idx 접근하자. 바로 idx접근하면 디버깅도 안되고 아주 골치아픔
 
 #### 문자열
 
 - string도 바로 sort 가능하다. sort(str.begin, str.end, greater<int>());
 - python: str.lower() str.upper() // cpp: transform(str.begin(), str.end(), str.begin, ::lower)
+- cpp string에서의 find는 iterator가 아닌 idx를 리턴함!!!
+
 
 #### 그외
 
@@ -75,16 +83,13 @@ cpp가 디폴트, 일부 string 다루는 문제들에서만 python
 - ~~프로그래머스 - 그리디 - 구명보트~~ | '두 명'이 조건이니까 투포인터 혹은 deque의 앞뒤로 하나씩 빼준다.
 - (★) ~~프로그래머스 - 이분탐색 - 입국심사~~ | 사람이 아닌, 시간을 기준으로 이분탐색한다.
 - 프로그래머스 - 힙 - 디스크컨트롤러
-- 프로그래머스 - 그리디 - 조이스틱 <- 이거 억울함,, 브루트포슨데;;
-- 프로그래머스 - DP - N으로 표현
 - 프로그래머스 - 그래프 - 순위
+- 프로그래머스 - 그리디 - 조이스틱
 
 ******************
 
-### 풀던중..
-
-백준 14567  
-프로그래머스 - 점프와 순간이동
+### 다시 봐도 모르겠음..
+- 프로그래머스 - DP - N으로 표현
 
 ******************
 
