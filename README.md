@@ -20,7 +20,9 @@ cpp가 디폴트, 일부 string 다루는 문제들에서만 python
 - 삼항연산자 python: a=b if a==b else c // cpp: a = a==b? a : b
 - rotate(s.begin(), s.begin()+1, s.end()) -> 왼쪽 // rotate(s.rbegin(), s.rbegin()+1, s.end()) -> 오른쪽
 - python은 set에 add // cpp는 set에 insert
-
+- python의 stoi : int(str) // cpp의 stoi : include string하고, stoi(), stol(), stof(), stod()
+- python의 itos : str(int) // cpp의 itos : include string하고, to_string()
+- 숫자 char를 int로 바꾸는건 '0' 빼는게 제일 간단. ex) '4'-'0'=4
 
 #### 자료구조
 
